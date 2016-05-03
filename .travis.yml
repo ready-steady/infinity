@@ -1,5 +1,15 @@
 language: go
 sudo: false
 
+install:
+  - go get -d -t ./...
+  - (cd $GOPATH/src/github.com/ready-steady/lapack && git submodule update --init && make install)
+  - go test -v ./...
+
+addons:
+  apt:
+    packages:
+      - gfortran
+
 notifications:
   email: false
