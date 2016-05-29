@@ -4,7 +4,7 @@ The package provides functions for working with infinite numbers.
 
 ## [Documentation][doc]
 
-## Contributing
+## Contribution
 
 1. Fork the project.
 2. Implement your idea.
